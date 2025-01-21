@@ -1,0 +1,54 @@
+:root {
+    --bg-color: #000000; /* Black */
+    --text-color: #ffffff; /* White */
+    --primary-color: #6495ED; /* CornflowerBlue */
+    --button-bg-color: var(--primary-color); /* CornflowerBlue for button background */
+    --button-text-color: var(--text-color); /* White for button text */
+    --button-hover-bg: #537bc4; /* Slightly darker shade of CornflowerBlue */
+  }
+*{
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+label{
+    font-weight: bolder;
+    color: var(--text-color);
+}
+#diceInput{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#rollButton{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#rollButton:hover{
+    background-color: var(--button-hover-bg);
+}
+#diceValue{
+    color: var(--text-color);
+    font-weight: bolder;
+    margin: 20px;
+}
+#diceImages img{
+    width: 100px;
+    padding: 10px;
+}
